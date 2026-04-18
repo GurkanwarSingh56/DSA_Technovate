@@ -24,6 +24,7 @@
 #include<vector>
 using namespace std;
 
+// function for sum
 int sumOfElements(vector<int> &arr){
     int sum = 0;
     for(int i = 0; i<arr.size(); i++){
@@ -37,11 +38,14 @@ int main(){
     cin>>n;
 
     vector<int> arr(n);
+    //taking input
     for(int i = 0; i<n; i++){
         cin>>arr[i];
     }
 
     int result = sumOfElements(arr);
+    
+    // printing output
     cout<< result ;
     return 0;
 }
