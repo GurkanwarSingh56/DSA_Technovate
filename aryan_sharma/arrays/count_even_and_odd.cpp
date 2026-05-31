@@ -20,7 +20,7 @@ void countEvenOdd(vector<int> &arr){
         }
     }
 
-    // output of result
+    // Print the result
     cout<<"Even : "<< evenCount<<endl;
     cout<<"Odd : "<< oddCount<<endl;
 }
