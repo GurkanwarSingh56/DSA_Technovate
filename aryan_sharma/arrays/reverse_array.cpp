@@ -10,13 +10,12 @@ Write a program to reverse the elements of an array.
 using namespace std;
 
 //Function to reverse an array
-void reverseArray(vector<int>&arr){
+void reverseArray(vector<int>& arr){
     int start = 0;
     int end = arr.size() - 1;
-    int temp;
 
     while(start < end){
-        temp = arr[end];
+        int temp = arr[end];
         arr[end] = arr[start];
         arr[start] = temp;
 
@@ -29,16 +28,16 @@ int main(){
     int n;
     cin>>n;
 
-// Input array elements
+    // Input array elements
     vector<int>arr(n);
     for(int i = 0; i<n; i++){
         cin>>arr[i];
     }
-    
-// Function call
+
+    // Function call
     reverseArray(arr);
 
-// Printing the reversed array
+    // Printing the reversed array
     for(int i = 0; i<n; i++){
         cout<<arr[i]<<" ";
     }
